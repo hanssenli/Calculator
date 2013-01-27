@@ -26,4 +26,16 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)Calculate
+{
+    NSString *aString = @"1 2 3";
+    NSMutableArray *numbers = [NSMutableArray alloc];
+    NSMutableArray *operations = [NSMutableArray alloc];
+    NSScanner *scanner = [NSScanner scannerWithString:aString];
+
+    while (scanner isAtEnd == NO) {
+        [scanner scanDouble:&number]
+    }
+}
+
 @end

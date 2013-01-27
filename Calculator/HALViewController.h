@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface HALViewController : UIViewController
-
+@property (strong, nonatomic) IBOutletCollection(<#ClassName#>)
 @end
