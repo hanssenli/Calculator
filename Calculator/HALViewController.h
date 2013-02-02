@@ -9,5 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface HALViewController : UIViewController
-@property (strong, nonatomic) IBOutletCollection(<#ClassName#>)
+{
+    float currentNumber;
+}
+@property (strong, nonatomic) IBOutlet UILabel *displayText;
+- (IBAction)digitButtonPressed:(id)sender;
+- (IBAction)operationButtonPressed:(id)sender;
+- (IBAction)calculateButtonPressed:(id)sender;
+- (IBAction)clearButtonPressed:(id)sender;
+
 @end

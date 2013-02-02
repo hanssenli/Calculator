@@ -26,16 +26,56 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)Calculate
-{
-    NSString *aString = @"1 2 3";
-    NSMutableArray *numbers = [NSMutableArray alloc];
-    NSMutableArray *operations = [NSMutableArray alloc];
-    NSScanner *scanner = [NSScanner scannerWithString:aString];
-
-    while (scanner isAtEnd == NO) {
-        [scanner scanDouble:&number]
+- (IBAction)digitButtonPressed:(id)sender {
+    if ([sender tag] != 0) {
+        currentNumber = (float)[sender tag];
+        
+        self.displayText.text =  [NSString stringWithFormat:@"%@%.f", self.displayText.text, currentNumber];
+    } else {
+        self.displayText.text = [NSString stringWithFormat:@"%@.", self.displayText.text];
     }
+}
+
+- (IBAction)operationButtonPressed:(id)sender {
+    switch ([sender tag]) {
+        case 0:
+            self.displayText.text =  [NSString stringWithFormat:@"%@ + ", self.displayText.text];
+            break;
+        case 1:
+            self.displayText.text =  [NSString stringWithFormat:@"%@ - ", self.displayText.text];
+            break;
+            
+        case 2:
+            self.displayText.text =  [NSString stringWithFormat:@"%@ * ", self.displayText.text];
+            break;
+
+        case 3:
+            self.displayText.text =  [NSString stringWithFormat:@"%@ / ", self.displayText.text];
+            break;
+            
+        case 4:
+            self.displayText.text =  [NSString stringWithFormat:@"%@^", self.displayText.text];
+            break;
+
+        case 5:
+            self.displayText.text =  [NSString stringWithFormat:@"%@(", self.displayText.text];
+            break;
+
+        case 6:
+            self.displayText.text =  [NSString stringWithFormat:@"%@)", self.displayText.text];
+            break;
+            
+        default:
+            break;
+    }
+}
+
+- (IBAction)calculateButtonPressed:(id)sender {
+
+}
+
+- (IBAction)clearButtonPressed:(id)sender {
+    self.displayText.text =  [NSString stringWithFormat:@""];
 }
 
 @end
