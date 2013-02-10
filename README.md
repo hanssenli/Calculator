@@ -12,3 +12,6 @@ When a second operation button is clicked, we will examine its priority compared
 2.If the second operation is of lower priority, we calculate the first expression and store the answer and wait for the next operation
 
 Finally, when we finish with all the inputs, we simply pop two numbers from the numbers stack and pop the operations and compute
+
+Translated the algorithm written in Java into Objective - C
+Source = http://randcode.wordpress.com/2012/08/30/postfix-calculator-written-in-java/

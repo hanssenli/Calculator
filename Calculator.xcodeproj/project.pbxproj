@@ -18,6 +18,12 @@
 		509460F116A4E66F00A1BAB9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 509460F016A4E66F00A1BAB9 /* Default-568h@2x.png */; };
 		509460F416A4E66F00A1BAB9 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 509460F216A4E66F00A1BAB9 /* MainStoryboard.storyboard */; };
 		509460F716A4E66F00A1BAB9 /* HALViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 509460F616A4E66F00A1BAB9 /* HALViewController.m */; };
+		50DA573516C42181001D4F1F /* HALNumberToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DA573416C42181001D4F1F /* HALNumberToken.m */; };
+		50DA573816C4639D001D4F1F /* HALOperatorToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DA573716C4639D001D4F1F /* HALOperatorToken.m */; };
+		50DA574116C4A30C001D4F1F /* HALStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DA574016C4A30C001D4F1F /* HALStack.m */; };
+		50DA574416C4A75D001D4F1F /* HALInfixToPostFixConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DA574316C4A75D001D4F1F /* HALInfixToPostFixConverter.m */; };
+		50DA574A16C4E665001D4F1F /* HALParenthesesToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DA574916C4E664001D4F1F /* HALParenthesesToken.m */; };
+		50DA574D16C4EA27001D4F1F /* HALPostfixEvaluator.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DA574C16C4EA26001D4F1F /* HALPostfixEvaluator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +43,19 @@
 		509460F316A4E66F00A1BAB9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		509460F516A4E66F00A1BAB9 /* HALViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HALViewController.h; sourceTree = "<group>"; };
 		509460F616A4E66F00A1BAB9 /* HALViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HALViewController.m; sourceTree = "<group>"; };
+		50DA572C16C41FE1001D4F1F /* HALToken.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HALToken.h; sourceTree = "<group>"; };
+		50DA573316C42181001D4F1F /* HALNumberToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HALNumberToken.h; sourceTree = "<group>"; };
+		50DA573416C42181001D4F1F /* HALNumberToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HALNumberToken.m; sourceTree = "<group>"; };
+		50DA573616C4639D001D4F1F /* HALOperatorToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HALOperatorToken.h; sourceTree = "<group>"; };
+		50DA573716C4639D001D4F1F /* HALOperatorToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HALOperatorToken.m; sourceTree = "<group>"; };
+		50DA573F16C4A30C001D4F1F /* HALStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HALStack.h; sourceTree = "<group>"; };
+		50DA574016C4A30C001D4F1F /* HALStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HALStack.m; sourceTree = "<group>"; };
+		50DA574216C4A75D001D4F1F /* HALInfixToPostFixConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HALInfixToPostFixConverter.h; sourceTree = "<group>"; };
+		50DA574316C4A75D001D4F1F /* HALInfixToPostFixConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HALInfixToPostFixConverter.m; sourceTree = "<group>"; };
+		50DA574816C4E664001D4F1F /* HALParenthesesToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HALParenthesesToken.h; sourceTree = "<group>"; };
+		50DA574916C4E664001D4F1F /* HALParenthesesToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HALParenthesesToken.m; sourceTree = "<group>"; };
+		50DA574B16C4EA26001D4F1F /* HALPostfixEvaluator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HALPostfixEvaluator.h; sourceTree = "<group>"; };
+		50DA574C16C4EA26001D4F1F /* HALPostfixEvaluator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HALPostfixEvaluator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +108,19 @@
 				509460F516A4E66F00A1BAB9 /* HALViewController.h */,
 				509460F616A4E66F00A1BAB9 /* HALViewController.m */,
 				509460E116A4E66F00A1BAB9 /* Supporting Files */,
+				50DA573316C42181001D4F1F /* HALNumberToken.h */,
+				50DA573416C42181001D4F1F /* HALNumberToken.m */,
+				50DA572C16C41FE1001D4F1F /* HALToken.h */,
+				50DA573616C4639D001D4F1F /* HALOperatorToken.h */,
+				50DA573716C4639D001D4F1F /* HALOperatorToken.m */,
+				50DA573F16C4A30C001D4F1F /* HALStack.h */,
+				50DA574016C4A30C001D4F1F /* HALStack.m */,
+				50DA574216C4A75D001D4F1F /* HALInfixToPostFixConverter.h */,
+				50DA574316C4A75D001D4F1F /* HALInfixToPostFixConverter.m */,
+				50DA574B16C4EA26001D4F1F /* HALPostfixEvaluator.h */,
+				50DA574C16C4EA26001D4F1F /* HALPostfixEvaluator.m */,
+				50DA574816C4E664001D4F1F /* HALParenthesesToken.h */,
+				50DA574916C4E664001D4F1F /* HALParenthesesToken.m */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -177,6 +209,12 @@
 				509460E716A4E66F00A1BAB9 /* main.m in Sources */,
 				509460EB16A4E66F00A1BAB9 /* HALAppDelegate.m in Sources */,
 				509460F716A4E66F00A1BAB9 /* HALViewController.m in Sources */,
+				50DA573516C42181001D4F1F /* HALNumberToken.m in Sources */,
+				50DA573816C4639D001D4F1F /* HALOperatorToken.m in Sources */,
+				50DA574116C4A30C001D4F1F /* HALStack.m in Sources */,
+				50DA574416C4A75D001D4F1F /* HALInfixToPostFixConverter.m in Sources */,
+				50DA574A16C4E665001D4F1F /* HALParenthesesToken.m in Sources */,
+				50DA574D16C4EA27001D4F1F /* HALPostfixEvaluator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +331,7 @@
 				509460FC16A4E66F00A1BAB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
