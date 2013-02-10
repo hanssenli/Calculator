@@ -15,3 +15,10 @@ Finally, when we finish with all the inputs, we simply pop two numbers from the 
 
 Translated the algorithm written in Java into Objective - C
 Source = http://randcode.wordpress.com/2012/08/30/postfix-calculator-written-in-java/
+
+All basic functions of implemented
+Addition features include: parentheses and exponentials
+Note: correct syntax of negative numbers requires parentheses
+For example: 
+Correct: 5 * (-1)s
+Incorrect: 5 * -1
